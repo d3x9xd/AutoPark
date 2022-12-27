@@ -1,0 +1,38 @@
+﻿<Page x:Class="AutoPark.PageMain.PageMB"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AutoPark.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PageMB">
+
+    <Grid>
+        <Grid Background="#FFFFFF">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Background="DeepSkyBlue">
+                
+
+            </StackPanel>
+            <Label Name="UserName" Content="Выберите пользователя"
+                   HorizontalAlignment="Center"  FontSize="20"/>
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <Button Name="Buxgalter" Content="Бухгалтер" FontSize="14"
+                    Width="250" Height="40" Click="Buxgalter_Click" Margin="70"/>
+                <Button x:Name="Manager"
+                    Content="Менеджер" FontSize="14"
+                    Width="250" 
+                    Height="40" 
+                    Click="Manager_Click" Margin="70"/>
+            </StackPanel>
+
+
+        </Grid>
+    </Grid>
+</Page>
